@@ -28,8 +28,8 @@ app.use(express.json())
 app.use(express.static('tmp'))
 app.use(`/`,routes)
 
-const privateKeyPath = "/etc/letsencrypt/live/johnatanortiz.tech/privkey.pem";
-const certificatePath = "/etc/letsencrypt/live/johnatanortiz.tech/fullchain.pem";
+const privateKeyPath = "/etc/letsencrypt/live/api.johnatanortiz.tech-0001/privkey.pem";
+const certificatePath = "/etc/letsencrypt/live/api.johnatanortiz.tech-0001/fullchain.pem";
 
 const privateKey = fs.readFileSync(privateKeyPath, 'utf8');
 const certificate = fs.readFileSync(certificatePath, 'utf8');
